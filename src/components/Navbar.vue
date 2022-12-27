@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full py-4  fixed bg-black text-white flex justify-between px-10 items-center">
+    <div class="w-full py-4  fixed bg-black text-white flex justify-between px-10 items-center z-30">
 
         <div class="text-xl font-[grotesk-bold]">REBANK</div>
         
