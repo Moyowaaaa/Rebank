@@ -28,6 +28,14 @@
     font-family:"grotesk" ;
     src: url('../fonts/SpaceGrotesk-Regular.otf');
 }
+@font-face {
+    font-family:"roboto" ;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family:"roboto-medium" ;
+    src: url('../fonts/Roboto-Medium.ttf');
+}
 
 body {
     
