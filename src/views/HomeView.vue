@@ -3,13 +3,19 @@ import Navbar from '../components/Navbar.vue'
 import TitleSection from '../components/TitleSection.vue'
 import AboutSection from '../components/AboutSection.vue'
 import Jumbotron from '../components/JumbtronPostor.vue'
+import Faqs from '../components/FaqsSection.vue'
+import Main from '../layouts/Main.vue'
 </script>
 
 <template>
 <div>
-<Navbar />
-<TitleSection />
+<!-- <Navbar /> -->
+<Main>
+    <TitleSection />
 <AboutSection />
 <Jumbotron />
+<Faqs />
+</Main>
+
 </div>
 </template>

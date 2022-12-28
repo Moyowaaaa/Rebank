@@ -1,12 +1,12 @@
 <template>
-    <div class="jumbotron h-screen bg-black text-white  flex flex-col items-center justify-center">
+    <div class="jumbotron  w-full h-screen bg-black text-white  flex flex-col items-center justify-center">
 
-        <div class="w-7/12 flex flex-col py-4 gap-4">
+        <div class="w-7/12 flex flex-col py-4 gap-4 items-center">
             <div class="w-full flex justify-start">
                 <p class="font-[roboto-medium]">Personalisation</p>
             </div>
             <h1 class="flex text-center text-5xl font-[grotesk-bold] z-20">Stand out from the crowd with a card <br/> and app to match your style</h1>
-            <div class="relative left-[40rem] bottom-10 w-max">
+            <div class="relative left-64 bottom-10 w-max">
                 <img src="../assets/images/scribble.svg" />
             </div>
             <p class="text-center font-[roboto]">
