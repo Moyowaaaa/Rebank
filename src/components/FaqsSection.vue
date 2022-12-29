@@ -16,7 +16,7 @@
 
             
 
-            <div class="w-full border-y-2 border-black flex justify-between py-4 items-center text-lg font-[grotesk-medium]">
+            <div class="w-full border-y-2 border-black flex justify-between py-4 items-center text-lg font-[grotesk-medium] mt-12">
                 <p>Are there any sign up fees?</p>
 
                 <img src="../assets/images/chevronDown.svg" />

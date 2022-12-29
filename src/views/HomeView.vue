@@ -4,6 +4,7 @@ import TitleSection from '../components/TitleSection.vue'
 import AboutSection from '../components/AboutSection.vue'
 import Jumbotron from '../components/JumbtronPostor.vue'
 import Faqs from '../components/FaqsSection.vue'
+import GetStartedSection from '@/components/GetStartedSection.vue'
 import Main from '../layouts/Main.vue'
 </script>
 
@@ -15,6 +16,7 @@ import Main from '../layouts/Main.vue'
 <AboutSection />
 <Jumbotron />
 <Faqs />
+<GetStartedSection />
 </Main>
 
 </div>
