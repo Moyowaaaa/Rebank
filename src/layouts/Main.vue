@@ -1,9 +1,9 @@
 <template>
-    <Navbar/>
+    <!-- <Navbar/> -->
     <div class=" w-full items-center flex flex-col ">
     <slot />
 </div>
-<Footer />
+<!-- <Footer /> -->
 </template>
 
 <script setup lang="ts">

@@ -2,25 +2,25 @@
     <div class="about w-full h-auto  flex flex-col gap-4 ">
 
         <div class="about-section  min-h-screen">
-            <h1 class="pl-10 font-[grotesk-bold] text-lg py-6">
+            <h1 class="lg:pl-10 font-[grotesk-bold] text-lg py-6 text-center lg:text-left">
         Used by the world's most amazing companies
     </h1>
         <MarqueeVue />
 
-        <div class="absolute  w-[10rem] object-cover right-0 mt-6" >
+        <div class="hidden lg:flex absolute  w-[10rem] object-cover right-0 mt-6" >
             <img src="../assets/images/showcaseColorGroup.svg" class="w-full"/>
         </div>
 
 
-        <div class="w-full mt-[8rem] flex  gap-6 ">
-            <div class="w-7/12 ">
-                <div class="flex my-32">
+        <div class="w-full mt-[8rem]  flex flex-col lg:flex-row gap-6 ">
+            <div class="w-full lg:w-7/12 border-2 border-[blue]">
+                <div class="flex my-32 justify-center lg:justify-start">
             <img src="../assets/images/showcaseOrange.svg" />
             <img src="../assets/images/showCaseYellow.svg" />
         </div>
 
 
-        <div class="relative bottom-[56rem] flex flex-col  h-[5rem] w-max justify-between left-[28rem] gap-32">
+        <div class="lg:relative bottom-[56rem] flex flex-col  h-[5rem] w-max justify-between left-[28rem] gap-32">
             <img src="../assets/images/showcaseBlue.svg" />
             <img src="../assets/images/showcasePink.svg" />
         </div>
@@ -37,11 +37,11 @@
             </div>
 
 
-            <div class="w-7/12 flex flex-col justify-end pb-64">
+            <div class="w-full lg:w-7/12 border-2 border-[green] flex flex-col lg:justify-end mb-64">
                 <div class="flex flex-col gap-4">
             <p class="font-[grotesk-medium]">Physical Card</p>
-            <h1 class="text-6xl font-[grotesk-bold] w-[45rem]">Spend anywhere with a physical debit card</h1>
-            <p class="text-lg font-[grotesk] w-[39rem] text-justify">The debit card is designed to spend everywhere and everywhere with simplicity and transparency built in. An RFID transponder embedded in its core enables you to pay with a quick touch-free wave.</p>
+            <h1 class="text-6xl font-[grotesk-bold] lg:w-[45rem]">Spend anywhere with a physical debit card</h1>
+            <p class="text-lg font-[grotesk] lg:w-[39rem] text-justify">The debit card is designed to spend everywhere and everywhere with simplicity and transparency built in. An RFID transponder embedded in its core enables you to pay with a quick touch-free wave.</p>
       
 
             <button class=" w-max py-4 px-6 rounded border-2 border-black font-[grotesk]">Find out more</button>
@@ -55,21 +55,27 @@
 
         <div class="spending-section min-h-screen  w-full flex flex-col my-6 items-center mb-42">
 
-            <div class="flex gap-4  items-center w-full ">
-                <div class="w-6/12  flex flex-col items-start pl-4" >
+            <div class="flex flex-col lg:flex-row gap-4   items-center w-full ">
+                <div class="w-full lg:w-6/12  flex flex-col lg:items-start lg:pl-4" >
                     <p class="font-[grotesk-medium]">Companion App</p>
-                    <h1 class="text-6xl font-[grotesk-bold] w-[50rem]">Spending insights at your</h1>
-                    <div class="flex gap-6 items-start">
+                    <h1 class="text-6xl font-[grotesk-bold] w-screen lg:w-[50rem]">Spending insights at your</h1>
+                    <div class="flex flex-col lg:flex-row gap-6 items-start">
                         <h1 class="text-6xl font-[grotesk-bold]">fingertips</h1>
-                        <p class="text-base font-[grotesk] pt-4">Engineered for clarity and speed to take your everyday spending experience to the next level. Instant transfers, virtual cards and heads up displays helps give you piece of mind about your finances.</p>
+                        <div class="flex flex-col gap-4">
+                            <p class="text-base font-[grotesk] pt-4 w-full ">Engineered for clarity and speed to take your everyday spending experience to the next level. Instant transfers, virtual cards and heads up displays helps give you piece of mind about your finances.</p>
+                        
+            <button class=" w-max py-4 px-6 rounded border-2 border-black font-[grotesk]">Find out more</button>
+                        </div>
+                     
                     </div>
+                    
                 </div>
 
 
-                <div class="w-6/12  flex items-center justify-center h-[50rem]">
-                    <img src="../assets/images/scribble2.svg" class="relative  self-end left-[6.5rem] bottom-6"/>
-                    <img src="../assets/images/spendingYellow.svg" class="relative my-32 right-32"/>
-                    <img src="../assets/images/spendingPink.svg" class="relative right-48 top-12"/>
+                <div class="w-full lg:w-6/12  flex items-center justify-center h-[50rem]">
+                    <img src="../assets/images/scribble2.svg" class="relative  lg:self-end lg:left-[6.5rem] lg:bottom-6"/>
+                    <img src="../assets/images/spendingYellow.svg" class="relative lg:my-32 lg:right-32"/>
+                    <img src="../assets/images/spendingPink.svg" class="relative lg:right-48 lg:top-12"/>
                 </div>
             </div>
 

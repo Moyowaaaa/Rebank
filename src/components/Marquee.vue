@@ -9,6 +9,8 @@
         <div class="flex gap-12 pl-4">
             <img :src="image" v-for="image in marqueArray" :key="image"  />
         </div>
+
+        
        
     </div>
 

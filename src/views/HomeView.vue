@@ -13,10 +13,10 @@ import Main from '../layouts/Main.vue'
 <!-- <Navbar /> -->
 <Main>
     <TitleSection />
-<AboutSection />
-<Jumbotron />
+<!-- <AboutSection /> -->
+ <Jumbotron />
 <Faqs />
-<GetStartedSection />
+<GetStartedSection /> 
 </Main>
 
 </div>
