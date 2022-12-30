@@ -2,7 +2,7 @@
     <div class="about w-full h-auto  flex flex-col gap-4 ">
 
         <div class="about-section  min-h-screen">
-            <h1 class="lg:pl-10 font-[grotesk-bold] text-lg py-6 text-center lg:text-left">
+            <h1 class="lg:pl-10 font-[grotesk-bold] text-lg py-6 text-center">
         Used by the world's most amazing companies
     </h1>
         <MarqueeVue />
@@ -13,7 +13,7 @@
 
 
         <div class="w-full mt-[8rem]  flex flex-col lg:flex-row gap-6 ">
-            <div class="w-full lg:w-7/12 border-2 border-[blue]">
+            <div class="w-full lg:w-7/12 ">
                 <div class="flex my-32 justify-center lg:justify-start">
             <img src="../assets/images/showcaseOrange.svg" />
             <img src="../assets/images/showCaseYellow.svg" />
@@ -37,7 +37,7 @@
             </div>
 
 
-            <div class="w-full lg:w-7/12 border-2 border-[green] flex flex-col lg:justify-end mb-64">
+            <div class="w-full lg:w-7/12  flex flex-col lg:justify-end mb-64">
                 <div class="flex flex-col gap-4">
             <p class="font-[grotesk-medium]">Physical Card</p>
             <h1 class="text-6xl font-[grotesk-bold] lg:w-[45rem]">Spend anywhere with a physical debit card</h1>
