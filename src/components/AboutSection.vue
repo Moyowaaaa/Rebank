@@ -1,7 +1,7 @@
 <template>
-    <div class=" w-full h-auto flex flex-col gap-4 mb-24">
+    <div class="about w-full h-auto  flex flex-col gap-4 ">
 
-        <div class="about-section h-screen">
+        <div class="about-section  min-h-screen">
             <h1 class="pl-10 font-[grotesk-bold] text-lg py-6">
         Used by the world's most amazing companies
     </h1>
@@ -11,53 +11,74 @@
             <img src="../assets/images/showcaseColorGroup.svg" class="w-full"/>
         </div>
 
-        <div class=" flex gap-4 absolute h-full w-full items-center " >
-            <!-- <AboutImages /> -->
-            <div class="w-6/12 border-2 border-[blue]"></div>
+
+        <div class="w-full mt-[8rem] flex  gap-6 ">
+            <div class="w-7/12 ">
+                <div class="flex my-32">
+            <img src="../assets/images/showcaseOrange.svg" />
+            <img src="../assets/images/showCaseYellow.svg" />
+        </div>
 
 
-            <div class=" w-6/12 h-auto pb-8 w-[50rem]" >
-                <div class="flex flex-col  w-10/12 gap-4">
-                    <h1 class=" font-[grotesk-bold] text-lg py-6">
-        Physical Card
-    </h1>
-    <h2 class="text-5xl font-[grotesk-bold]">Spend anywhere with a <br /> physical
-         debit card</h2>
+        <div class="relative bottom-[56rem] flex flex-col  h-[5rem] w-max justify-between left-[28rem] gap-32">
+            <img src="../assets/images/showcaseBlue.svg" />
+            <img src="../assets/images/showcasePink.svg" />
+        </div>
 
-         <p>The debit card is designed to spend everywhere and everywhere with <br/> simplicity and transparency built in. An RFID transponder embedded in <br/> its core enables you to pay with a quick touch-free wave.</p>
+        <div class="-z-50 relative bottom-[29.5rem] flex flex-col  h-[5rem] w-max justify-between left-[25rem] ">
+            <img src="../assets/images/Ellipse1.svg" class="w-[5.2rem] relative left-[13rem] bottom-[15rem]"/>
 
-         <button class="flex py-4 px-8 border-2 rounded border-black w-max">
-            <p class="font-[grotesk-light]">Find out more</p>
-         </button>
+            <div class="flex flex-col items-center">
+                <img src="../assets/images/Ellipse2.svg" class="relative top-[8.5rem] w-[7rem]" />
+                <img src="../assets/images/Ellipse3.svg" class="w-[10rem]"/>
+            </div>
+            
+        </div>
+            </div>
+
+
+            <div class="w-7/12 flex flex-col justify-end pb-64">
+                <div class="flex flex-col gap-4">
+            <p class="font-[grotesk-medium]">Physical Card</p>
+            <h1 class="text-6xl font-[grotesk-bold] w-[45rem]">Spend anywhere with a physical debit card</h1>
+            <p class="text-lg font-[grotesk] w-[39rem] text-justify">The debit card is designed to spend everywhere and everywhere with simplicity and transparency built in. An RFID transponder embedded in its core enables you to pay with a quick touch-free wave.</p>
+      
+
+            <button class=" w-max py-4 px-6 rounded border-2 border-black font-[grotesk]">Find out more</button>
+        </div>
+            </div>
+        </div>
+
+
+        </div>
+
+
+        <div class="spending-section min-h-screen  w-full flex flex-col my-6 items-center mb-42">
+
+            <div class="flex gap-4  items-center w-full ">
+                <div class="w-6/12  flex flex-col items-start pl-4" >
+                    <p class="font-[grotesk-medium]">Companion App</p>
+                    <h1 class="text-6xl font-[grotesk-bold] w-[50rem]">Spending insights at your</h1>
+                    <div class="flex gap-6 items-start">
+                        <h1 class="text-6xl font-[grotesk-bold]">fingertips</h1>
+                        <p class="text-base font-[grotesk] pt-4">Engineered for clarity and speed to take your everyday spending experience to the next level. Instant transfers, virtual cards and heads up displays helps give you piece of mind about your finances.</p>
+                    </div>
+                </div>
+
+
+                <div class="w-6/12  flex items-center justify-center h-[50rem]">
+                    <img src="../assets/images/scribble2.svg" class="relative  self-end left-[6.5rem] bottom-6"/>
+                    <img src="../assets/images/spendingYellow.svg" class="relative my-32 right-32"/>
+                    <img src="../assets/images/spendingPink.svg" class="relative right-48 top-12"/>
                 </div>
             </div>
+
         </div>
-        </div>
+    
 
 
 
-        <div class="spending-section h-screen w-full flex" >
-            <div class=" w-6/12 flex flex-col justify-center">
-                <div class="w-full  px-4">
-                    <p class="font-[grotesk] font-semibold">Companion App</p>
-                    <h1 class="font-[grotesk-bold] text-5xl pt-3">Spending insights at your <br />
-                        <div class="flex gap-2 pt-2 items-start">
-                            fingertips
-                            <div class="w-8/12 pt-2 flex flex-col gap-4">
-                                <p class="text-base font-[grotesk]">Engineered for clarity and speed to take your everyday <br /> spending experience to the next level. Instant transfers, <br/> virtual cards and heads up displays helps give you piece of <br/> mind about your finances.</p>
-                                <button class="flex border-2 rounded border-black w-max text-base font-[grotesk] py-4 px-8">
-                                    Find out more
-                                </button>
-                            </div>
-                        </div> 
-             
-                    </h1>
-                </div>
-            </div>
-            <div class="absolute right-2 phones-container w-6/12 h-full ">
-                
-            </div>
-        </div>
+      
       
     </div>
 </template>
@@ -70,12 +91,33 @@ import AboutImages from '../components/AboutImages.vue'
 <style scoped>
 
 
+.about{
+    max-width: 450rem;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .about-section {
-    background-image:url('../assets/images/Ellipse1.svg'), url('../assets/images/Ellipse2.svg'),url('../assets/images/Ellipse3.svg'), url('../assets/images/Ellipse4.svg'), url('../assets/images/Ellipse5.svg');
+    background-image:
+    /* url('../assets/images/Ellipse1.svg'),  */
+    /* url('../assets/images/Ellipse2.svg'),url('../assets/images/Ellipse3.svg'),  */
+    url('../assets/images/Ellipse4.svg'), url('../assets/images/Ellipse5.svg');
     background-repeat: no-repeat;
-    background-position-y:20vh, 48vh, 45vh, 80vh, 58vh;
-    background-position-x: center,center,center, right, right;
-    background-attachment: scroll, scroll, scroll, fixed, fixed;
+    background-position-y:
+    /* 20vh, */
+     /* 48vh,45vh, */
+      80vh, 58vh;
+    background-position-x: 
+    /* 10vh, */
+    /* center,center,  */
+    right, right;
+    background-attachment: 
+    /* scroll, */
+     /* scroll, scroll, */
+      fixed, fixed;
 }
 
 .spending-section{
@@ -83,17 +125,9 @@ import AboutImages from '../components/AboutImages.vue'
     background-repeat: no-repeat;
     background-position:right, 200px 0vh, center 20vh;
     background-size: contain;
+    background-attachment: fixed;
 }
 
-.phones-container{
-    background-image:   url('../assets/images/spendingPink.svg'),url('../assets/images/spendingYellow.svg'),url('../assets/images/scribble2.svg');
-    background-repeat: no-repeat;
-    background-position-x:25rem,12rem ,0rem;
-    background-position-y:15vh, 10vh, 50vh;
-    background-size: auto, auto, auto;
-    /* background-position-x:1rem ,center;
-    background-position-y: 15vh, 10vh; */
-    
-    
-}
+
+
 </style>
