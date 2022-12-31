@@ -13,7 +13,7 @@
 
 
         <div class="w-screen lg:w-full lg:mt-[8rem]  flex flex-col lg:flex-row gap-6 ">
-            <div class="w-[10rem] mx-auto lg:w-7/12 ">
+            <div class="w-[10rem] mx-auto lg:mx-0 lg:w-7/12 ">
                 <div class="flex my-32 justify-center lg:justify-start">
             <img src="../assets/images/showcaseOrange.svg" />
             <img src="../assets/images/showCaseYellow.svg" />
@@ -72,11 +72,11 @@
                 </div>
 
 
-                <!-- <div class="w-full lg:w-6/12  flex items-center justify-center h-[50rem]">
-                    <img src="../assets/images/scribble2.svg" class="relative  lg:self-end lg:left-[6.5rem] lg:bottom-6"/>
-                    <img src="../assets/images/spendingYellow.svg" class="relative lg:my-32 lg:right-32"/>
-                    <img src="../assets/images/spendingPink.svg" class="relative lg:right-48 lg:top-12"/>
-                </div> -->
+                <div class="w-[20rem]  lg:w-6/12  flex items-center lg:justify-center h-[50rem]">
+                    <img src="../assets/images/scribble2.svg" class="hidden lg:flex lg:relative  lg:self-end lg:left-[6.5rem] lg:bottom-6"/>
+                    <img src="../assets/images/spendingYellow.svg" class="relative lg:my-32 lg:right-32 right-[-4rem]"/>
+                    <img src="../assets/images/spendingPink.svg" class="relative lg:right-48 top-20 lg:top-12 right-[15rem]" />
+                </div>
             </div>
 
         </div>

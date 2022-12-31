@@ -64,8 +64,8 @@
 
 
 @media screen and (max-width:485px) {
-    .title-section{
-        background: none;
-    }
+.title-section{
+background-image: none;
+}
 }
 </style>
