@@ -53,7 +53,7 @@
         </div>
 
 
-        <div class="spending-section min-h-screen  w-full flex flex-col my-6 items-center mb-42">
+        <div class="spending-section min-h-screen  w-full flex flex-col my-6 items-center mb-52">
 
             <div class="flex flex-col lg:flex-row gap-4   items-center w-full ">
                 <div class="w-full lg:w-6/12  flex flex-col lg:items-start lg:pl-4" >

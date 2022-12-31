@@ -1,8 +1,29 @@
+<script setup lang="ts">
+import gsap from 'gsap';
+import { onMounted } from 'vue';
+
+onMounted(() => {
+    const titleTl = gsap.timeline()
+
+    titleTl.fromTo('.bars',{opacity:0},{ y: 0, opacity: 1, duration:1.5, delay:1.5, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" });
+
+    titleTl.fromTo('.title-head',{opacity:0},{ y: 0, opacity: 1, duration:1.5, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" },'<0.1');
+    titleTl.from('.title-content', {
+        duration:0.5,
+        ease:"power3.inOut",
+        
+    })
+})
+
+
+</script>
+
+
 <template>
     <div class="title-section flex w-screen lg:w-full  h-screen pt-[5rem] ">
      
 
-        <div class=" flex flex-col w-full justify-center ">
+        <div class="title-content flex flex-col w-full justify-center ">
 
             <div class="w-full  h-5/6 absolute my-12 flex justify-between items-end pb-24 lg:pr-10" >
                 <div class="hidden lg:flex h-auto">
@@ -10,7 +31,7 @@
                 </div>
 
 
-                <div class="hidden h-auto lg:flex gap-2 pb-28">
+                <div class="bars hidden h-auto lg:flex gap-2 pb-28">
                 
                     <img src="../assets/images/lineShort.svg" />
                     <img src="../assets/images/lineMedium.svg" />
@@ -48,9 +69,7 @@
     </div>
 </template>
 
-<script setup lang="ts">
 
-</script>
 
 <style scoped>
 .title-section {

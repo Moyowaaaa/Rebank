@@ -4,6 +4,10 @@ import { onMounted,ref } from 'vue';
 
 let show = ref<boolean>(false)
 
+const links = ['Card','App','Pricing', 'FAQs']
+
+var navTl = gsap.timeline()
+
 var menuTl = gsap.timeline()
 
 var menuBodyTl = gsap.timeline({paused:true})
@@ -34,9 +38,10 @@ onMounted(() => {
 menuTl.reverse()
 
 menuBodyTl.to('.menu', {
-    duration:0.2,
+    duration:0.5,
 	display: "block",
 	ease: 'Expo.easeInOut',
+
  
 })
 
@@ -88,6 +93,19 @@ menuBodyTl.from('.button', {
 
 menuBodyTl.reverse()
 
+
+navTl.from('.navbar', {
+    // opacity:0,
+    // ease:"Expo.easeInOut",
+    // duration:0.3,
+    // delay:1.3,
+    ease:"power3.inOut",
+    y:-200,
+    opacity:0,
+    delay:1.6
+})
+
+
 })
 
 
@@ -100,26 +118,25 @@ const openMenu = () => {
 
 
 
+
+
 </script>
 
 
 <template>
     <div>
-    <div class="w-screen lg:w-full py-4  fixed bg-black text-white flex justify-between px-4 lg:px-10 items-center z-30">
+    <div class="navbar w-screen lg:w-full py-4  fixed bg-black text-white flex justify-between px-4 lg:px-10 items-center z-30">
 
-        <div class="text-xl font-[grotesk-bold]">REBANK</div>
-        
-        <div class="hidden lg:flex gap-4 font-[grotesk] items-center">
-            <p>Card</p>
+        <div class="logo text-xl font-[grotesk-bold] cursor-pointer">REBANK</div>
 
-            <p>App</p>
-
-            <p>Pricing</p>
-
-            <p>FAQs</p>
-
-            <button class="px-10 py-2 bg-white text-black rounded-md">Login</button>
+        <div class="flex gap-4 hidden lg:flex cursor-pointer">
+            <div class="navlinks hidden lg:flex gap-4 font-[grotesk] items-center" v-for="link in links">
+            <p>{{ link }}</p>
         </div>
+
+            <button class="navButton px-10 py-2 bg-white text-black rounded-md">Login</button>
+        </div>
+       
 
         <div class="lg:hidden nav-button" @click="openMenu">
             <svg viewBox="0 0 12 10" class="hamburger" height="40px" width="40px">
