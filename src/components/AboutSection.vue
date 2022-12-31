@@ -2,7 +2,7 @@
     <div class="about w-full h-auto  flex flex-col gap-4 ">
 
         <div class="about-section  min-h-screen">
-            <h1 class="lg:pl-10 font-[grotesk-bold] text-lg py-6 text-center">
+            <h1 class="lg:pl-10 font-[grotesk-bold] text-lg py-6 text-center lg:text-start">
         Used by the world's most amazing companies
     </h1>
         <MarqueeVue />
@@ -13,7 +13,7 @@
 
 
         <div class="w-full mt-[8rem]  flex flex-col lg:flex-row gap-6 ">
-            <div class="w-full lg:w-7/12 ">
+            <!-- <div class="w-full lg:w-7/12 ">
                 <div class="flex my-32 justify-center lg:justify-start">
             <img src="../assets/images/showcaseOrange.svg" />
             <img src="../assets/images/showCaseYellow.svg" />
@@ -34,17 +34,17 @@
             </div>
             
         </div>
-            </div>
+            </div> -->
 
 
             <div class="w-full lg:w-7/12  flex flex-col lg:justify-end mb-64">
                 <div class="flex flex-col gap-4">
             <p class="font-[grotesk-medium]">Physical Card</p>
-            <h1 class="text-6xl font-[grotesk-bold] lg:w-[45rem]">Spend anywhere with a physical debit card</h1>
-            <p class="text-lg font-[grotesk] lg:w-[39rem] text-justify">The debit card is designed to spend everywhere and everywhere with simplicity and transparency built in. An RFID transponder embedded in its core enables you to pay with a quick touch-free wave.</p>
+            <h1 class="text-4xl w-11/12 mx-auto lg:mx-0 lg:text-6xl font-[grotesk-bold] lg:w-[45rem]">Spend anywhere with a physical debit card</h1>
+            <p class="text-lg w-11/12 mx-auto lg:mx-0 font-[grotesk] lg:w-[39rem] lg:text-justify">The debit card is designed to spend everywhere and everywhere with simplicity and transparency built in. An RFID transponder embedded in its core enables you to pay with a quick touch-free wave.</p>
       
 
-            <button class=" w-max py-4 px-6 rounded border-2 border-black font-[grotesk]">Find out more</button>
+            <button class=" w-11/12 mx-auto lg:mx-0 lg:w-max py-4 px-6 rounded border-2 border-black font-[grotesk]">Find out more</button>
         </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
             <div class="flex flex-col lg:flex-row gap-4   items-center w-full ">
                 <div class="w-full lg:w-6/12  flex flex-col lg:items-start lg:pl-4" >
                     <p class="font-[grotesk-medium]">Companion App</p>
-                    <h1 class="text-6xl font-[grotesk-bold] w-screen lg:w-[50rem]">Spending insights at your</h1>
+                    <h1 class="text-4xl lg:text-6xl font-[grotesk-bold] w-screen lg:w-[50rem]">Spending insights at your</h1>
                     <div class="flex flex-col lg:flex-row gap-6 items-start">
                         <h1 class="text-6xl font-[grotesk-bold]">fingertips</h1>
                         <div class="flex flex-col gap-4">
@@ -72,11 +72,11 @@
                 </div>
 
 
-                <div class="w-full lg:w-6/12  flex items-center justify-center h-[50rem]">
+                <!-- <div class="w-full lg:w-6/12  flex items-center justify-center h-[50rem]">
                     <img src="../assets/images/scribble2.svg" class="relative  lg:self-end lg:left-[6.5rem] lg:bottom-6"/>
                     <img src="../assets/images/spendingYellow.svg" class="relative lg:my-32 lg:right-32"/>
                     <img src="../assets/images/spendingPink.svg" class="relative lg:right-48 lg:top-12"/>
-                </div>
+                </div> -->
             </div>
 
         </div>

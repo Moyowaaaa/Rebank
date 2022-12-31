@@ -1,12 +1,12 @@
 <template>
-    <div class="w-full h-[20rem]">
-        <div class="px-10 w-full py-4  h-full flex justify-between">
-        <div class="text-xl font-[grotesk-bold]">REBANK</div>
+    <div class="w-full h-auto lg:h-[20rem]">
+        <div class="lg:px-10 w-full py-4  h-full flex flex-col lg:flex-row lg:justify-between">
+        <div class="text-xl font-[grotesk-bold] pl-4 lg:pl-0 pb-10 lg:pb-0">REBANK</div>
 
         <div class="flex flex-col gap-2">
 
 
-            <div class="flex gap-20 px-6">
+            <div class="flex flex-row flex-wrap gap-20 px-4 lg:px-6">
             
 
                 <div class="flex flex-col gap-2">
@@ -52,27 +52,27 @@
         
 
 
-        <div class=" flex flex-col flex flex-col gap-2">
-            <h2 class="text-xl font-[grotesk-bold]">Subscribe</h2>
-            <p class="font-[grotesk]">Join our newsletter to stay up to date on features and releases.</p>
+        <div class=" flex flex-col flex flex-col gap-2 pt-8 lg:pt-0">
+            <h2 class="text-base lg:text-xl font-[grotesk-bold] pl-4">Subscribe</h2>
+            <p class="text-sm lg:text-base font-[grotesk] pl-4">Join our newsletter to stay up to date on features and releases.</p>
 
-            <div class="flex w-full  gap-4">
+            <div class="flex flex-col lg:flex-row w-full w-11/12 mx-auto lg:mx-0  gap-4">
                 <input type="text" 
-                class="rounded border-2 border-black py-2 px-4 w-9/12 placeholder:font-[grotesk-light]" 
+                class="rounded border-2 border-black py-2 px-4 w-full lg:w-9/12 placeholder:font-[grotesk-light]" 
                 placeholder="Enter your email"
                 />
 
-                <button class="py-4 px-6 border-2 border-black rounded w-3/12 font-[grotesk] flex items-center justify-center">Subscribe</button>
+                <button class="py-2 lg:py-4 px-6 border-2 border-black rounded w-full lg:w-3/12 font-[grotesk] flex items-center justify-center">Subscribe</button>
             </div>
-            <p class="text-sm w-[36rem] font-[grotesk-light]">By subscribing you agree to with our <span class="underline">Privacy Policy</span> and provide consent to receive updates from our company.</p>
+            <p class="text-xs lg:text-sm w-11/12 mx-auto lg:mx-0 lg:w-[36rem] font-[grotesk-light]">By subscribing you agree to with our <span class="underline">Privacy Policy</span> and provide consent to receive updates from our company.</p>
         </div>
 
 
         
     </div>
     
-    <div class="pb-12 mx-10 pb-4 pt-6 flex items-center gap-4 justify-between border-t-2 border-black">
-        <div class="flex gap-4 h-full items-center font-[grotesk]">
+    <div class="pb-12 lg:mx-10 pb-4 pt-6 flex flex-col lg:flex-row lg:items-center gap-4 lg:justify-between border-t-2 border-black mx-4">
+        <div class="text-sm lg:text-base flex gap-4 h-full lg:items-center font-[grotesk] flex-col lg:flex-row ">
         <p class="underline">2022 Rebank. All right reserved.</p>
         <p class="underline">Privacy Policy</p>
         <p class="underline">Terms of Service</p>
@@ -80,7 +80,7 @@
         </div>
 
 
-        <div class="flex gap-4 h-full items-center">
+        <div class="flex gap-4 h-full items-center justify-center lg:justify-start">
             <img src="../assets/images/Facebook.svg" />
             <img src="../assets/images/Instagram.svg" />
             <img src="../assets/images/Twitter.svg" />
@@ -91,7 +91,7 @@
 
 
 
-    <div class="absolute w-max right-0 ">
+    <div class="flex absolute w-max right-0 ">
             <img src="../assets/images/footerColorGroup.svg" />
         </div>
   

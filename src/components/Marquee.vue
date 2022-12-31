@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full z-50">
+    <div class="w-screen lg:w-full  z-50">
     <Vue3Marquee class="overflow-hidden h-auto">
     <div class="w-full  flex items-center gap-12 pl-4">
         <div  v-for="(image, index) in marqueArray">
