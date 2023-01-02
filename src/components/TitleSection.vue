@@ -5,14 +5,23 @@ import { onMounted } from 'vue';
 onMounted(() => {
     const titleTl = gsap.timeline()
 
-    titleTl.fromTo('.bars',{opacity:0},{ y: 0, opacity: 1, duration:1.5, delay:1.5, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" });
-
+   
     titleTl.fromTo('.title-head',{opacity:0},{ y: 0, opacity: 1, duration:1.5, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" },'<0.1');
     titleTl.from('.title-content', {
         duration:0.5,
         ease:"power3.inOut",
+        opacity:0,
+
         
     })
+    titleTl.fromTo('.bars',{opacity:0},{ y: 0, opacity: 1, duration:1.5, delay:0.8, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" });
+
+    titleTl.to('.color-group',{
+        scaleY:1.2,
+        duration:0.6,
+        opacity:1,
+        ease:"power3.inOut"
+    },"<0.1")
 })
 
 
@@ -26,7 +35,7 @@ onMounted(() => {
         <div class="title-content flex flex-col w-full justify-center ">
 
             <div class="w-full  h-5/6 absolute my-12 flex justify-between items-end pb-24 lg:pr-10" >
-                <div class="hidden lg:flex h-auto">
+                <div class="opacity-0 color-group hidden lg:flex h-auto">
                     <img src="../assets/images/titleColorGroup.svg" />
                 </div>
 
@@ -42,7 +51,7 @@ onMounted(() => {
 
             <div class="h-full w-screen lg:w-full  lg:pl-24 flex flex-col justify-center" >
                 <div class="flex flex-col gap-4 ">
-                    <h1 class="text-5xl lg:text-6xl font-bold font-[grotesk-bold] w-11/12 mx-auto lg:w-[45rem] lg:mx-0">Welcome to personalised banking</h1>
+                    <h1 class="title-head text-5xl lg:text-6xl font-bold font-[grotesk-bold] w-11/12 mx-auto lg:w-[45rem] lg:mx-0">Welcome to personalised banking</h1>
 
                     <div class="w-full text-base w-11/12 mx-auto lg:text-xl lg:w-[40rem] lg:text-justify lg:mx-0">
                         More than a debit card, we’ve redesigned and reimagined the entire idea of banking. Spend securely. Pay anyway you want. Get insights  about your money. Welcome to banking revolving around you.

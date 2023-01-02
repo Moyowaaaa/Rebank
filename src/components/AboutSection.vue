@@ -14,15 +14,15 @@
 
         <div class="w-screen lg:w-full lg:mt-[8rem]  flex flex-col lg:flex-row gap-6 ">
             <div class="w-[10rem] mx-auto lg:mx-0 lg:w-7/12 ">
-                <div class="flex my-32 justify-center lg:justify-start">
+                <div class="showcase flex my-32 justify-center lg:justify-start">
             <img src="../assets/images/showcaseOrange.svg" />
             <img src="../assets/images/showCaseYellow.svg" />
         </div>
 
 
         <div class="lg:relative bottom-[56rem] hidden lg:flex flex-col  h-[5rem] w-max justify-between left-[28rem] gap-32">
-            <img src="../assets/images/showcaseBlue.svg" />
-            <img src="../assets/images/showcasePink.svg" />
+            <img src="../assets/images/showcaseBlue.svg" class="showcaseBlue"/>
+            <img src="../assets/images/showcasePink.svg"  class="showcasePink"/>
         </div>
 
         <div class="-z-50 lg:relative bottom-[29.5rem] hidden lg:flex flex-col  h-[5rem] w-max justify-between left-[25rem] ">
@@ -38,7 +38,7 @@
 
 
             <div class="w-full lg:w-7/12  flex flex-col lg:justify-end mb-64">
-                <div class="flex flex-col gap-4">
+                <div class="about-hero flex flex-col gap-4">
             <p class="font-[grotesk-medium]">Physical Card</p>
             <h1 class="text-4xl w-11/12 mx-auto lg:mx-0 lg:text-6xl font-[grotesk-bold] lg:w-[45rem]">Spend anywhere with a physical debit card</h1>
             <p class="text-lg w-11/12 mx-auto lg:mx-0 font-[grotesk] lg:w-[39rem] lg:text-justify">The debit card is designed to spend everywhere and everywhere with simplicity and transparency built in. An RFID transponder embedded in its core enables you to pay with a quick touch-free wave.</p>
@@ -56,7 +56,7 @@
         <div class="spending-section min-h-screen  w-full flex flex-col my-6 items-center mb-52">
 
             <div class="flex flex-col lg:flex-row gap-4   items-center w-full ">
-                <div class="w-full lg:w-6/12  flex flex-col lg:items-start lg:pl-4" >
+                <div class="spendingHero w-full lg:w-6/12  flex flex-col lg:items-start lg:pl-4" >
                     <p class="font-[grotesk-medium]">Companion App</p>
                     <h1 class="text-4xl lg:text-6xl font-[grotesk-bold] w-screen w-11/12 mx-auto lg:mx-0 lg:w-[50rem] text-center lg:text-left">Spending insights at your</h1>
                     <div class="flex flex-col lg:flex-row gap-6 items-center lg:items-start">
@@ -102,7 +102,7 @@ gsap.registerPlugin(ScrollTrigger)
             trigger:'.spending-section',
             start: 'top center',
             end:'top +=10',
-            markers:true,
+        
             scrub:0.1
         }
     })
@@ -114,13 +114,42 @@ gsap.registerPlugin(ScrollTrigger)
         ease:"power3.inOut",
         y:400
     })
-    // spendingTl.from('.Pink',{
-    //     opacity:0,
-    //     duration:1.2,
-    //     delay:0.8,
-    //     ease:"power3.inOut",
-    //     y:400
-    // })
+
+    spendingTl.fromTo('.spendingHero',  { opacity: 0,scaleX:0.8 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 1.5,
+    //   clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)",
+    scaleX: 1, 
+    z: -500
+    },"<0.1")
+
+
+    let aboutTl = gsap.timeline({
+        scrollTrigger:{
+            trigger:'.about-section',
+            start: 'top center',
+            end:'top +=100',
+    
+            scrub:0.1
+        }
+    })
+
+
+    aboutTl.from('.showcaseBlue',{
+        scale:1.8,
+        opacity:0,
+        delay:0.5,
+        ease:"power3.in"
+    })
+    aboutTl.from('.showcasePink',{
+        scale:1.8,
+        opacity:0,
+        delay:0.5,
+        ease:"power3.in"
+    })
+
  })
 
 
