@@ -196,5 +196,11 @@ gsap.registerPlugin(ScrollTrigger)
 }
 
 
+@media screen and (max-width:485px) {
+    .spending-section{
+        background-attachment: scroll;
+    }
+}
+
 
 </style>
