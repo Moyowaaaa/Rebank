@@ -74,8 +74,8 @@
 
                 <div class="w-[20rem]  lg:w-6/12  flex items-center lg:justify-center h-[50rem]">
                     <img src="../assets/images/scribble2.svg" class="hidden lg:flex lg:relative  lg:self-end lg:left-[6.5rem] lg:bottom-6"/>
-                    <img src="../assets/images/spendingYellow.svg" class="relative lg:my-32 lg:right-32 right-[-4rem]"/>
-                    <img src="../assets/images/spendingPink.svg" class="relative lg:right-48 top-20 lg:top-12 right-[15rem]" />
+                    <img src="../assets/images/spendingYellow.svg" class="Yellow relative lg:my-32 lg:right-32 right-[-4rem]"/>
+                    <img src="../assets/images/spendingPink.svg" class="Pink relative lg:right-48 top-20 lg:top-12 right-[15rem]" />
                 </div>
             </div>
 
@@ -92,6 +92,38 @@
 <script setup lang="ts">
 import MarqueeVue from './Marquee.vue';
 import AboutImages from '../components/AboutImages.vue'
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { onMounted } from 'vue';
+gsap.registerPlugin(ScrollTrigger)
+ onMounted(() => {
+    let spendingTl = gsap.timeline({
+        scrollTrigger:{
+            trigger:'.spending-section',
+            start: 'top center',
+            end:'top +=10',
+            markers:true,
+            scrub:0.1
+        }
+    })
+
+    spendingTl.from(['.Yellow','.Pink'],{
+        opacity:0,
+        duration:1.5,
+        stagger:0.5,
+        ease:"power3.inOut",
+        y:400
+    })
+    // spendingTl.from('.Pink',{
+    //     opacity:0,
+    //     duration:1.2,
+    //     delay:0.8,
+    //     ease:"power3.inOut",
+    //     y:400
+    // })
+ })
+
+
 </script>
 
 <style scoped>

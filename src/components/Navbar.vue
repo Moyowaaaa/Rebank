@@ -125,7 +125,7 @@ const openMenu = () => {
 
 <template>
     <div>
-    <div class="navbar w-screen lg:w-full py-4  fixed bg-black text-white flex justify-between px-4 lg:px-10 items-center z-30">
+    <div class="navbar w-screen lg:w-full py-4  fixed bg-black text-white flex justify-between px-4 lg:px-10 items-center z-50">
 
         <div class="logo text-xl font-[grotesk-bold] cursor-pointer">REBANK</div>
 
@@ -138,7 +138,7 @@ const openMenu = () => {
         </div>
        
 
-        <div class="lg:hidden nav-button" @click="openMenu">
+        <div class="lg:hidden nav-button z-50" @click="openMenu">
             <svg viewBox="0 0 12 10" class="hamburger" height="40px" width="40px">
                     <path d="M10,2 L2,2" class="bar1"></path>
                     <path d="M2,5 L10,5" class="bar2"></path>
@@ -149,7 +149,7 @@ const openMenu = () => {
 
    
     </div>
-    <div class="menu hidden h-screen pt-[6rem] fixed w-screen  bg-black text-white lg:hidden" >
+    <div class="menu hidden h-screen pt-[6rem] fixed w-screen  bg-black text-white lg:hidden z-40" >
 
         <div class="link flex flex-col gap-6 px-4 font-[grotesk-medium]">
             <p class="link1">Card</p>

@@ -6,16 +6,21 @@ import Jumbotron from '../components/JumbtronPostor.vue'
 import Faqs from '../components/FaqsSection.vue'
 import GetStartedSection from '@/components/GetStartedSection.vue'
 import Main from '../layouts/Main.vue'
+import { watch,reactive,ref,onMounted,watchEffect } from 'vue'
+
 </script>
 
 <template>
 <div>
 <!-- <Navbar /> -->
 <Main>
+    
+
     <TitleSection />
 <AboutSection />
  <Jumbotron />
 <Faqs />
+
 <GetStartedSection /> 
 </Main>
 

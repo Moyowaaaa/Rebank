@@ -6,7 +6,7 @@ import { onMounted } from 'vue';
 
 
 onMounted(() => {
-    const tl =gsap.timeline()
+    const tl = gsap.timeline()
     tl.from('.home', {
         opacity:0,
         delay:1.2,
