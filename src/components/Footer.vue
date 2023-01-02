@@ -73,7 +73,7 @@
     
     <div class="pb-12 lg:mx-10 pb-4 pt-6 flex flex-col lg:flex-row lg:items-center gap-4 lg:justify-between border-t-2 border-black mx-4">
         <div class="text-sm lg:text-base flex gap-4 h-full lg:items-center font-[grotesk] flex-col lg:flex-row ">
-        <p class="underline">2022 Rebank. All right reserved.</p>
+        <p class="underline flex items-center "><span>{{ year }}</span>&nbsp;Rebank. All right reserved.</p>
         <p class="underline">Privacy Policy</p>
         <p class="underline">Terms of Service</p>
         <p class="underline">Cookies Settings</p>
@@ -99,7 +99,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref,onMounted } from 'vue';
 const aboutLinks = [{
     title:'About',
     links:['Pricing','FAQ','Contact','News']
@@ -114,6 +114,12 @@ const appLinks = [{
     title: 'App',
     links:['Download','Virtual Cards', 'Transfers', 'Lock Cards']
 }]
+
+let year = ref<any>()
+onMounted(()=> {
+    const date = new Date();
+   year.value = date.getFullYear()
+})
 
 
 </script>
