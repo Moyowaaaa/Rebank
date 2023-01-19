@@ -12,30 +12,33 @@ import shortBar from '../assets/images/lineShort.svg'
 import mediumBar from '../assets/images/lineMedium.svg'
 import TallBar from '../assets/images/lineTall.svg'
 import colorGroup from '../assets/images/titleColorGroup.svg'
+import groteskFont from '../assets/fonts/SpaceGrotesk-Bold.otf'
 
 const assetsLoaded = ref<boolean>(false)
 
-const images = ref([
+const assets = ref([
     mainImage,shortBar,mediumBar,colorGroup,TallBar
 ])
 
 
 onMounted(() => {
     const promises:any[] = []
-    images.value.forEach(image => {
+    assets.value.forEach(asset => {
         const img = new Image()
-        img.src = image
+        img.src = asset
         promises.push(new Promise((resolve, reject) => {
           img.onload = resolve
           img.onerror = reject
-        }))
+        }))        
     })
+    new Promise((resolve,reject) => {
+            const font = new FontFace('grotesk-bold',`url(${groteskFont})`);
+            font.load().then(resolve,reject)
+        })
+        
     Promise.all(promises).then(() => {
         assetsLoaded.value = true
-      }).catch(() => {
-        console.log('One or more images failed to load')
       })
-
 })
 
 // onMounted(() => {
