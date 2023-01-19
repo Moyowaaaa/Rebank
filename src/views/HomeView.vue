@@ -6,12 +6,65 @@ import Jumbotron from '../components/JumbtronPostor.vue'
 import Faqs from '../components/FaqsSection.vue'
 import GetStartedSection from '@/components/GetStartedSection.vue'
 import Main from '../layouts/Main.vue'
-import { watch,reactive,ref,onMounted,watchEffect } from 'vue'
+import { ref,onMounted } from 'vue'
+import mainImage from '../assets/images/titleSectionMain.svg'
+import shortBar from '../assets/images/lineShort.svg'
+import mediumBar from '../assets/images/lineMedium.svg'
+import TallBar from '../assets/images/lineTall.svg'
+import colorGroup from '../assets/images/titleColorGroup.svg'
+
+const assetsLoaded = ref<boolean>(false)
+
+const images = ref([
+    mainImage,shortBar,mediumBar,colorGroup,TallBar
+])
+
+
+onMounted(() => {
+    const promises:any[] = []
+    images.value.forEach(image => {
+        const img = new Image()
+        img.src = image
+        promises.push(new Promise((resolve, reject) => {
+          img.onload = resolve
+          img.onerror = reject
+        }))
+    })
+    Promise.all(promises).then(() => {
+        assetsLoaded.value = true
+      }).catch(() => {
+        console.log('One or more images failed to load')
+      })
+
+})
+
+// onMounted(() => {
+//     const assets = [
+//         // new Promise((resolve,reject) => {
+//         //     const image = new Image();
+//         //     // image.onload = resolve
+//         //     // image.onerror = reject;
+//         //     // image.src = mainImage
+//         // }),
+//         new Promise((resolve,reject) => {
+//             const font = new FontFace('grotesk-bold','url(../assets/fonts/SpaceGrotesk-Bold.otf)');
+//             font.load().then(resolve,reject)
+//         })
+//     ]
+//     Promise.all(assets) 
+//     .then(() => {
+//         assetsLoaded.value = true
+//     }).catch((error) => {
+//         console.log(error)
+//     })
+// })
+  
+
 
 </script>
 
 <template>
-<div>
+<div v-if="assetsLoaded">
 <!-- <Navbar /> -->
 <Main>
     
@@ -26,3 +79,5 @@ import { watch,reactive,ref,onMounted,watchEffect } from 'vue'
 
 </div>
 </template>
+
+
