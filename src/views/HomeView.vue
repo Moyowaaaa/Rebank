@@ -13,6 +13,9 @@ import mediumBar from '../assets/images/lineMedium.svg'
 import TallBar from '../assets/images/lineTall.svg'
 import colorGroup from '../assets/images/titleColorGroup.svg'
 import groteskFont from '../assets/fonts/SpaceGrotesk-Bold.otf'
+import groteskMedium from '../fonts/SpaceGrotesk-Medium.otf'
+import groteskRegular from '../fonts/SpaceGrotesk-Regular.otf'
+
 
 const assetsLoaded = ref<boolean>(false)
 
@@ -34,6 +37,11 @@ onMounted(() => {
     new Promise((resolve,reject) => {
             const font = new FontFace('grotesk-bold',`url(${groteskFont})`);
             font.load().then(resolve,reject)
+            const font2 = new FontFace('grotesk-medium',`url(${groteskMedium})`);
+            font.load().then(resolve,reject)
+            const font3 = new FontFace('grotesk',`url(${groteskRegular})`);
+            font.load().then(resolve,reject)
+            
         })
         
     Promise.all(promises).then(() => {
