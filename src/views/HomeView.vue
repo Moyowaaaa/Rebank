@@ -15,7 +15,7 @@ import colorGroup from '../assets/images/titleColorGroup.svg'
 import groteskFont from '../assets/fonts/SpaceGrotesk-Bold.otf'
 import groteskMedium from '../assets/fonts/SpaceGrotesk-Medium.otf'
 import groteskRegular from '../assets/fonts/SpaceGrotesk-Regular.otf'
-import { useLocomotiveScroll } from '@/composables/useLocomotiveScroll'
+
 import Lenis from '@studio-freight/lenis'
 
 // useLocomotiveScroll('#container')
