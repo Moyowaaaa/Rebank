@@ -124,7 +124,7 @@ const openMenu = () => {
 
 
 <template>
-    <div>
+    <div >
     <div class="navbar w-screen lg:w-full py-4  fixed bg-black text-white flex justify-between px-4 lg:px-10 items-center z-50">
 
         <div class="logo text-xl font-[grotesk-bold] cursor-pointer">REBANK</div>

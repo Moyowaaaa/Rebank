@@ -1,7 +1,7 @@
 <template>
   
     <Navbar/>
-    <div class=" w-full items-center flex flex-col ">
+    <div class=" w-full items-center flex flex-col "  >
     <slot />
 </div>
 <Footer />

@@ -10,11 +10,11 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
- 
+    "@studio-freight/lenis": "^0.2.28",
     "@vueuse/core": "^9.9.0",
     "gsap": "^3.11.4",
+    "locomotive-scroll": "^4.1.4",
     "pinia": "^2.0.26",
-
     "vue": "^3.2.45",
     "vue-router": "^4.1.6",
     "vue3-marquee": "^3.1.2"
