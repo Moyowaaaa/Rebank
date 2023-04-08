@@ -1,7 +1,7 @@
 <template>
     <div class="about w-full h-auto  flex flex-col gap-4 " data-scroll data-scroll-section>
 
-        <div class="about-section  h-auto w-11/12  mx-auto">
+        <div class="about-section  h-auto">
             <h1 class="lg:pl-10 font-[grotesk-bold] text-lg py-6 px-2  text-start">
         Used by the world's most amazing companies
     </h1>
@@ -137,7 +137,18 @@ gsap.registerPlugin(ScrollTrigger)
     })
 
 
-  
+    // aboutTl.from('.showcaseBlue',{
+    // //     scale:1.8,
+    // //     opacity:0,
+    // //     delay:0.5,
+    // //     ease:"power3.in"
+    // // })
+    // // aboutTl.from('.showcasePink',{
+    // //     scale:1.8,
+    // //     opacity:0,
+    // //     delay:0.5,
+    // //     ease:"power3.in"
+    // // })
 
  })
 
