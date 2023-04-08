@@ -1,7 +1,7 @@
 <template>
-    <div class="about w-full h-auto  flex flex-col gap-4 ">
+    <div class="about w-full h-auto  flex flex-col gap-4 " data-scroll data-scroll-section>
 
-        <div class="about-section  min-h-screen">
+        <div class="about-section  h-auto w-11/12  mx-auto">
             <h1 class="lg:pl-10 font-[grotesk-bold] text-lg py-6 px-2  text-start">
         Used by the world's most amazing companies
     </h1>
@@ -53,7 +53,7 @@
         </div>
 
 
-        <div class="spending-section min-h-screen  w-full flex flex-col my-6 items-center mb-52">
+        <div class="spending-section h-auto  w-11/12  mx-auto flex flex-col my-6 items-center mb-52">
 
             <div class="flex flex-col lg:flex-row gap-4   items-center w-full ">
                 <div class="spendingHero w-full lg:w-6/12  flex flex-col lg:items-start lg:pl-4" >
@@ -137,18 +137,7 @@ gsap.registerPlugin(ScrollTrigger)
     })
 
 
-    aboutTl.from('.showcaseBlue',{
-        scale:1.8,
-        opacity:0,
-        delay:0.5,
-        ease:"power3.in"
-    })
-    aboutTl.from('.showcasePink',{
-        scale:1.8,
-        opacity:0,
-        delay:0.5,
-        ease:"power3.in"
-    })
+  
 
  })
 

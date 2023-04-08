@@ -36,7 +36,7 @@ onMounted(() => {
 
 
 <template>
-    <div class="jumbotron w-screen lg:w-full h-screen bg-black text-white  flex flex-col items-center justify-center">
+    <div class="jumbotron w-screen lg:w-full h-screen bg-black text-white  flex flex-col items-center justify-center" data-scroll data-scroll-section>
 
         <div class="w-11/12 lg:w-7/12 flex flex-col py-4 gap-4 lg:items-center">
             <div class="w-full flex justify-start">

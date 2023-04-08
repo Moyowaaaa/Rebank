@@ -1,14 +1,7 @@
 <template>
   <div
-    class="overflow-y-hidden get-started min-h-screen flex flex-col lg:flex-row w-full lg:justify-center"
-  >
-    <!-- <div class="absolute  h-full w-6/12 border-2 border-[teal]"></div>
-        
-
-        <div class="relative h-full border-2 border-[red] flex w-4/12 items-center right-20">
-            <img src="../assets/images/getStartedPhone.svg" class="absolute w-auto z-20"/>
-            <img src="../assets/images/getStartedCard.svg" class="absolute w-auto left-52"/>
-        </div> -->
+    class="getStarted overflow-y-hidden get-started h-auto  py-64 flex flex-col lg:flex-row w-full lg:justify-center"
+    data-scroll data-scroll-section >
 
     <div
       class="w-full lg:w-10/12 flex flex-col lg:flex-row lg:justify-center mt-12 lg:mt-0"
@@ -87,4 +80,5 @@ onMounted(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

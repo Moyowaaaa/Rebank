@@ -29,7 +29,7 @@ onMounted(() => {
 
 
 <template>
-    <div class="title-section flex w-screen lg:w-full  h-screen pt-[5rem] ">
+    <div class="title-section flex w-screen lg:w-full  h-screen pt-[5rem] " data-scroll data-scroll-section>
      
 
         <div class="title-content flex flex-col w-full justify-center ">

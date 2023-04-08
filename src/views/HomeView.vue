@@ -15,10 +15,7 @@ import colorGroup from '../assets/images/titleColorGroup.svg'
 import groteskFont from '../assets/fonts/SpaceGrotesk-Bold.otf'
 import groteskMedium from '../assets/fonts/SpaceGrotesk-Medium.otf'
 import groteskRegular from '../assets/fonts/SpaceGrotesk-Regular.otf'
-
 import Lenis from '@studio-freight/lenis'
-
-// useLocomotiveScroll('#container')
 
 const smoothScroll = ()=>{
   const lenis = new Lenis({
@@ -52,7 +49,7 @@ const assets = ref([
 
 
 onMounted(() => {
-    smoothScroll()
+
     const promises:any[] = []
     assets.value.forEach(asset => {
         const img = new Image()
@@ -77,43 +74,20 @@ onMounted(() => {
       })
 })
 
-// onMounted(() => {
-//     const assets = [
-//         // new Promise((resolve,reject) => {
-//         //     const image = new Image();
-//         //     // image.onload = resolve
-//         //     // image.onerror = reject;
-//         //     // image.src = mainImage
-//         // }),
-//         new Promise((resolve,reject) => {
-//             const font = new FontFace('grotesk-bold','url(../assets/fonts/SpaceGrotesk-Bold.otf)');
-//             font.load().then(resolve,reject)
-//         })
-//     ]
-//     Promise.all(assets) 
-//     .then(() => {
-//         assetsLoaded.value = true
-//     }).catch((error) => {
-//         console.log(error)
-//     })
-// })
-  
 
 
 </script>
 
 <template>
-<div v-if="assetsLoaded" ref="container"  id="container">
-<!-- <Navbar /> -->
-<Main >
-    
-
-    <TitleSection />
+<div v-if="assetsLoaded" ref="container"  id="main-container">
+<Main>
+  <TitleSection />
 <AboutSection />
  <Jumbotron />
 <Faqs />
 
 <GetStartedSection /> 
+
 </Main>
 
 </div>

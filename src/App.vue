@@ -3,17 +3,8 @@ import { RouterLink, RouterView } from 'vue-router'
 import NavbarVue from './components/Navbar.vue';
 import { gsap } from 'gsap';
 import { onMounted } from 'vue';
+import LocomotiveScroll from "locomotive-scroll";
 
-
-onMounted(() => {
-    const tl = gsap.timeline()
-    tl.from('.home', {
-        opacity:0,
-        delay:1.2,
-        // y:400,
-        ease:"power3.inOut"
-    },"<0.1")
-})
 
 </script>
 
